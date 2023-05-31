@@ -43,7 +43,6 @@ int successor(bst_t *node)
 		}
 		return (left);
 	}
-
 }
 /**
  *remove_type - function that removes a node depending of its children
@@ -126,7 +125,7 @@ bst_t *bst_remove(bst_t *root, int value)
  */
 avl_t *avl_remove(avl_t *root, int value)
 {
-	avl_t *root_a = (avl_t *) bst_remove((bst_t *) root, value);
+	avl_t *root_a = (avl_t *)bst_remove((bst_t *)root, value);
 
 	if (root_a == NULL)
 		return (NULL);
